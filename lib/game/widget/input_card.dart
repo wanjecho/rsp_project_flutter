@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class InputCard extends StatelessWidget {
-  final Widget child;
   final VoidCallback? callback;
+  final Widget child;
 
   const InputCard({
     required this.child,
-    required this.callback,
+    this.callback, //required 가 있으면 무조건 들어가야됨
     super.key,
   });
 
